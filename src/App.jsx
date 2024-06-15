@@ -6,7 +6,7 @@ import Body from './components/body/Body.jsx'
 function App() {
   return (
     <>
-    <Search />
+    
     <Body />   
 
     {/* <Logo/> */}

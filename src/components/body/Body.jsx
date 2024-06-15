@@ -4,7 +4,7 @@ import Search from '../search/Search';
 import Profile from '../profile/Profile';
 
 
-function App() {
+function Body() {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Body;

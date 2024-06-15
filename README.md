@@ -1,6 +1,6 @@
-# React + Vite
+# GITHUB FINDER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application helps you to search GitHub accounts and displays the profile with the repositories, following accounts, and number of followers the account has
 
 Currently, two official plugins are available:
 

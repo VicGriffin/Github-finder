@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Search />
-    <Body/>
+    <Body />   
 
     {/* <Logo/> */}
     </>

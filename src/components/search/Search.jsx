@@ -1,19 +1,30 @@
-import React from 'react'
-import "./search.css"
+import React, { useState } from 'react';
+import "./search.css";
 
-function Search() {
+function Search({ onSearch }) {
+  const [username, setUsername] = useState('Github');
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    onSearch(username);
+  };
+
   return (
-    <>
-    <header className='search-nav'>
-      <h1>github finder </h1>
-      <p>By <a href="https://github.com/VicGriffin" target='_blank'>Victor kamau</a></p>
-      <div className='search-place'>
-      <input type="text" value="" placeholder='search'/>
-      <button>search</button>
+    <div className="search-nav">
+      <h1>Github Finder</h1>
+      <p>By <a href="#">Victor Kamau</a></p>
+      <div className="search-form">
+        <form onSubmit={handleSearch}>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <button type="submit">Search</button>
+        </form>
       </div>
-    </header>
-    </>
-  )
+    </div>
+  );
 }
 
-export default Search
+export default Search;

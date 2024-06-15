@@ -6,9 +6,11 @@
     background-color: #f0f0f0;
     border-right: 1px solid #534c4c;
     left: 50px;
-    /* width: 300px; */
+    width: 350px;
     height: 90vh;
     gap: 1rem;
+    overflow-y: auto;
+    /* position: fixed; */
 }
 .profile button{
     border-radius: 10px;
@@ -16,7 +18,7 @@
 }
 button a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 .profile img{
     width: 250px;

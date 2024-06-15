@@ -14,14 +14,13 @@ function Profile({ profile }) {
     <div className="profile">
       <h2>{profile.name}</h2>
       <img src={profile.avatar_url} alt="Profile Avatar" width={100} />
-      <button><a href="">view on github</a></button>
+      <button><a href={profile.html_url} target="_blank" rel="noopener noreferrer">View on GitHub</a></button>
       <p><strong>Bio:</strong> {profile.bio}</p>
       <p><strong><CiLocationOn />Location:</strong> {profile.location}</p>
       <p><strong><RiGitRepositoryFill />Public Repos:</strong> {profile.public_repos}</p>
       <p><strong><IoIosPeople />Followers:</strong> {profile.followers}</p>
       <p><strong><IoIosPeople />Following:</strong> {profile.following}</p>
       <p><strong><CiSearch />Profile URL:</strong> <a href={profile.html_url} target="_blank" rel="noopener noreferrer">{profile.html_url}</a></p>
-      
     </div>
   );
 }

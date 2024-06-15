@@ -1,6 +1,7 @@
 import React from 'react'
 import Body from '../body/Body'
 import Repository from '../repository/Repository'
+import "./Bodys.css"
 
 function Bodys() {
   return (

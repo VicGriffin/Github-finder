@@ -1,0 +1,10 @@
+.bodys{
+    display: flex;
+    flex-direction: row;
+}
+.bodys .body-right{
+    flex: 1;
+}
+.bodys .body-left{
+    flex: 3;
+}

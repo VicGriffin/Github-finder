@@ -1,0 +1,48 @@
+
+.container {
+    width: 100%;
+}
+  
+.header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+  
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+  
+.profile-section, .repository-section {
+    flex: 1;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+}
+  
+.repository-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.repository-section li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+.repository-section h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+  
+.repository-section p {
+    margin: 5px 0;
+}
+  
+.repository-section a {
+    color: blue;
+    text-decoration: none;
+}
+  

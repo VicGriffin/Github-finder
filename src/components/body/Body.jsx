@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import "./Body.css";
 import Search from '../search/Search';
 import Profile from '../profile/Profile.jsx';
-
+import { FaCodeFork } from "react-icons/fa6";
 
 function Body() {
   const [profile, setProfile] = useState(null);
@@ -37,26 +38,32 @@ function Body() {
   };
 
   return (
-    <div>
-      <Search onSearch={fetchProfile} />
+    <div className="container">
+      <div className="header">
+        <Search onSearch={fetchProfile} />
+      </div>
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <Profile profile={profile} />
-      <div className="repository-section">
-        <h1>Repositories</h1>
-        {repositories.length > 0 ? (
-          <ul>
-            {repositories.map((repo) => (
-              <li key={repo.id}>
-                <h2>{repo.name}</h2>
-                <p>{repo.description}</p>
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p>No repositories available</p>
-        )}
+      <div className="main-content">
+        <div className="profile-section">
+          <Profile profile={profile} />
+        </div>
+        <div className="repository-section">
+          <h1>Repositories</h1>
+          {repositories.length > 0 ? (
+            <ul>
+              {repositories.map((repo) => (
+                <li key={repo.id}>
+                  <h2>{repo.name}</h2>
+                  <p>{repo.description}</p>
+                  <a href={repo.html_url} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No repositories available</p>
+          )}
+        </div>
       </div>
     </div>
   );

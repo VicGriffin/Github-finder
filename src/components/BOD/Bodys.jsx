@@ -1,7 +1,6 @@
 import React from 'react'
 import Body from '../body/Body'
-import Repository from '../repository/Repository'
-import "./Bodys.css"
+// import "./Bodys.css"
 
 function Bodys() {
   return (
@@ -11,7 +10,7 @@ function Bodys() {
             <Body/>
         </div>
         <div className="left-section">
-            <Repository/>
+            
 
         </div>
     </div>

@@ -1,5 +1,4 @@
-
-.container {
+.container {    
     width: 100%;
 }
   
@@ -15,15 +14,18 @@
 }
   
 .profile-section, .repository-section {
-    flex: 1;
-    width: 250px;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
+    padding: 20px;
+    border-radius: 10px;
 }
-  
+
 .repository-section ul {
+    width: 400px;
     list-style: none;
     padding: 0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: space-between;
 }
   
 .repository-section li {

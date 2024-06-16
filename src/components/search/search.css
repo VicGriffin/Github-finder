@@ -4,6 +4,7 @@
     background-color: #070F2B;
     align-items: center;
     width: 100%;
+    /* position: fixed; */
 }
 .search-nav h1{
     color: #CCD2DA;

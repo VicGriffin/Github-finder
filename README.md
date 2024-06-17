@@ -1,6 +1,6 @@
 # GITHUB FINDER
 
-This application helps you to search GitHub accounts and displays the profile with the repositories, following accounts, and number of followers the account has
+This application helps you to search GitHub accounts and displays the profile with the repositories, following accounts, and number of followers the account has.
 check it out its fun
 
 Currently, two official plugins are available:
